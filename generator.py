@@ -1,7 +1,9 @@
-
+from model_text_gen_lstm import model, dataX, chars, n_vocab, n_chars
+import numpy
+import sys
 
 #load the network weights
-filename = "weights-improvement-19-1.9435.hdf5"
+filename = "weights-improvement-07-0.6103.hdf5"
 model.load_weights(filename)
 model.compile(loss='categorical_crossentropy', optimizer='adam')
 
